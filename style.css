@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1D1C26;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    margin-top: 150px;
+    text-align: center;
+}
+.title{
+    color: #e4e3e9;
+    font-size: 32px;
+    position: absolute;
+    top: 50px;
+    transform: translateX(90%);
+}
+.textInput{
+    background-color: #f2f2f21f;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    color: #e4e3e9;
+}
+.btn{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background: #393273;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: .1s;
+}
+
+.btn:hover, .btn:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px #928EBF, 0 0 0 4px #393273;
+}
+.tasks{
+    margin-top: 30px;
+    margin-left: -241px;
+}
+.task{
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+.check{
+    width: 50px;
+}
+.textCheck{
+    color: #e4e3e9;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.btnDel{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background: #BF1F2C;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: .1s;
+    position: absolute;
+    bottom: 50px;
+}
+
+.btnDel:hover, .btnDel:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px #FF293B, 0 0 0 4px #400A0F;
+}
