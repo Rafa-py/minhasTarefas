@@ -13,6 +13,7 @@ let controller = ()=>{
         let index = sessionStorage.length;
         sessionStorage.setItem(index, value);
         showDataToUser(index, value);
+        moveBtnDelToDown()
     }
 
     let showDataToUser = (index, data) =>{
@@ -67,9 +68,20 @@ let controller = ()=>{
             sessionStorage.clear();
             let content = document.querySelector(".tasks");
             content.innerHTML = "";
+            moveBtnDelToDown(true);
         })
     }
-
+    let moveBtnDelToDown = (del)=>{
+        let btn = document.querySelector(".btnDel");
+        if(del){
+            let newBottom = `50px`;
+            btn.style.bottom = newBottom;
+        }else{
+            let bottomBtn = parseInt(window.getComputedStyle(btn).getPropertyValue("bottom"));
+            let newBottom = `${bottomBtn - 30}px`;
+            btn.style.bottom = newBottom;
+        }
+    }
     clearData();
 }
 controller()

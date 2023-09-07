@@ -12,6 +12,7 @@ html{
 body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #1D1C26;
 }
 
 ul {
@@ -29,7 +30,6 @@ img {
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: #1D1C26;
     display: flex;
     justify-content: flex-start;
     align-items: center;
